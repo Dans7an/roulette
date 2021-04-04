@@ -1,0 +1,109 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+
+.jumbotron{
+  display: flex;
+  flex-direction: row;
+}
+
+.secBetAmount{
+  display: flex;
+  flex-direction: column;
+}
+.secPokerChips{
+  display: flex;
+  width: 80%;
+}
+
+img{
+  height: 200px;
+}
+.fa-trash::before {
+    content: "\f014";
+}
+
+.num:hover{
+  background-color: magenta;
+  border-color: magenta;
+}
+
+.pokerchips{
+  width: 10%;
+  height: 100px;
+  border: 1px solid black;
+  margin:0% 10%;
+  float: left;
+}
+
+body.moving {
+  cursor: move;
+}
+
+.roulette {
+  margin: 40px;
+  padding: 40px;
+  background: #1C7022;
+  display: table;
+  position: relative;
+  width: 775px;
+  /*transform: rotate(90deg);
+  margin:300px 0 0 -230px;*/
+}
+.roulette table {
+  float: left;
+}
+.roulette table,
+tr {
+  border-collapse: collapse;
+  /*border-spacing: 0;*/
+}
+.roulette td {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 2px solid white;
+  width: 50px;
+  height: 46px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  white-space: nowrap;
+}
+/* elements */
+.roulette .sector {
+  background: #1C7022;
+  color: #8EB891;
+}
+.roulette .sector .vt {
+  font-size: 15px;
+}
+.roulette .num {
+  font-size: 22px;
+}
+.roulette .num span {
+  display: block;
+  transform: rotate(270deg);
+}
+.roulette .zero {
+  width: 70px;
+  font-size: 56px;
+}
+.roulette .empty {
+  border: none;
+}
+/* colors */
+.roulette .green {
+  background: #1C7022;
+  color: #8EB891;
+}
+.roulette .red {
+  background: #A91607;
+  color: #8EB891;
+}
+.roulette .black {
+  background: #0E3811;
+  color: #8EB891;
+}
