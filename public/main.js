@@ -1,4 +1,4 @@
-// var button = document.querySelector('button').addEventListener('click', bet)
+// Collaborated with House Moses memebers on this app 
 
 //Player's Bet
 var bet =  0
@@ -77,48 +77,13 @@ var num = document.getElementsByClassName("num");
 //Record the player's choice AKA the square they clicked on.
 
 let playerChoice
-
   function getPlayerChoice(e){
-
     const betNumber = e.target.innerText
-    const betColor = e.target.parentNode.getAttribute('data-value')
+    const betColor = e.target.getAttribute('data-value')
     playerChoice = `${betNumber} ${betColor}`
-
     document.querySelector('.h2PlayerChoice').innerText = `You bet on ${playerChoice}`
     console.log(playerChoice)
-
-
 }
-//This is an object for the roulette game.
-
-  // let rouletteGame = {
-  //   player:{
-  //    betColor: "betColor", //Need an option for the player to select the color they are betting their money on will update with client side team this will correspond to the data-values on the index.ejs file
-  //    betNumber: "betNumber",
-  //    betAmount: "betAmount"//Storing the amount of money the player is betting
-  //   },
-  //
-  //   casino:{
-  //     total: 0, //net profits
-  //     losses: "losses",
-  //     wins: "wins",
-  //     amountLost: 0,
-  //     amountWon: 0
-  //   }
-  // }
-//object casino and player info
-
-
-//this function picks randomly between 2 options red or black can expand on this later
-
-  // function randomColor(){
-  //   let random = Math.floor(Math.random())
-  //   if(random <= .5){
-  //     return "red"
-  //   }else{
-  //     return "black"
-  //   }
-  // }
 
   //This function generates a random computer choice
 
